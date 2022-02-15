@@ -8,7 +8,7 @@
       <header class=" md:flex">
         <img class=" top-image -translate-y-[60%] md:hidden" src="../faq-accordion-card-main/images/illustration-woman-online-mobile.svg" alt="">
         <img class=" top-image -translate-y-[175%] md:hidden " src="../faq-accordion-card-main/images/bg-pattern-mobile.svg" alt="">
-        <img src="../faq-accordion-card-main/images/illustration-woman-online-desktop.svg" alt="">
+        <img class=" hidden" src="../faq-accordion-card-main/images/illustration-woman-online-desktop.svg" alt="">
         
       </header>
       <main>
