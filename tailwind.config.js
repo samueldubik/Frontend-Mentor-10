@@ -4,7 +4,11 @@ module.exports = {
     "./src/**/*.{vue,js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      backgroundImage: {
+        'desktop' : "url('faq-accordion-card-main/images/bg-pattern-desktop.svg')"
+      }
+    },
     colors: {
       'text-blue' : '#1d1e35',
       'text-red'  : '#f47c57',

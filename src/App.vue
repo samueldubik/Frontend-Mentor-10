@@ -3,18 +3,18 @@
 </script>
 
 <template>
-  <div class=" body-style md:py-[10vh] ">
-    <article class=" md:h-[80vh] md:mt-0">
-      <header class=" md:flex">
-        <img class=" top-image -translate-y-[60%] md:hidden" src="../faq-accordion-card-main/images/illustration-woman-online-mobile.svg" alt="">
-        <img class=" top-image -translate-y-[175%] md:hidden " src="../faq-accordion-card-main/images/bg-pattern-mobile.svg" alt="">
-        <img class=" hidden" src="../faq-accordion-card-main/images/illustration-woman-online-desktop.svg" alt="">
+  <div class=" body-style lg:py-[15vh]">
+    <article class=" lg:overflow-hidden lg:h-[70vh] lg:w-[65vw]  lg:flex ">
+      <header class=" lg:w-[350px] lg:bg-desktop lg:bg-right lg:sticky ">
+        <img class=" top-image -translate-y-[60%] lg:hidden" src="../faq-accordion-card-main/images/illustration-woman-online-mobile.svg" alt="">
+        <img class=" top-image -translate-y-[175%] lg:hidden " src="../faq-accordion-card-main/images/bg-pattern-mobile.svg" alt="">
+        <img class=" hidden  lg:block md:w-[450px] lg:-ml-[80px] lg:mt-[50%]  max-w-none" src="../faq-accordion-card-main/images/illustration-woman-online-desktop.svg" alt="">
         
       </header>
-      <main>
-        <h1>FAQ</h1>
-        <ul>
-          <li @click="item.state = !item.state" v-for="(item,index) in items" :key="`item-${index}`">
+      <main class="lg:my-auto lg:mx-auto">
+        <h1 class=" lg:text-left lg:text-5xl">FAQ</h1>
+        <ul class=" min-w-[30vw]">
+          <li class=" lg:ml-0 " @click="item.state = !item.state" v-for="(item,index) in items" :key="`item-${index}`">
             <div class="flex">
               <h2 :class="{'font-bold' : item.state, 'font-normal' : !item.state }">{{ item.question }}</h2>
               <img :class="{'rotate-180' : item.state}"  class=" chevron " src="../faq-accordion-card-main/images/icon-arrow-down.svg" alt="">
@@ -26,6 +26,8 @@
 
       </main>
     </article>
+    
+
   </div>
 </template>
 
